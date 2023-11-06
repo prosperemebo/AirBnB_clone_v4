@@ -9,9 +9,7 @@ function main() {
     }
 
     $('.amenities h4').text(Object.keys(amenities).sort().join(', '));
-
-    console.log(amenities)
   });
 }
 
-document.ready(main);
+$(document).ready(main);
