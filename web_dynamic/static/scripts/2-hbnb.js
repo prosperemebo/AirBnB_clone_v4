@@ -9,7 +9,7 @@ function main() {
     $('.amenities h4').text(Object.keys(amenities).sort().join(', '));
   });
 
-  $.getJSON('http://0.0.0.0:5001/api/v1/status/', (data) => {
+  $.getJSON('http://100.25.16.172/api/v1/status/', (data) => {
     if (data.status === 'OK') {
       $('div#api_status').addClass('available');
     } else {
